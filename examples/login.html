@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login and SignUp</title>
+    <link href="login.css" rel="stylesheet"/>
+</head>
+<body>
+<form action="/action_page.php">
+    <div class="imgcontainer">
+        <img src="http://vignette3.wikia.nocookie.net/scribblenauts/images/c/c2/Combat_Medic.png/revision/latest?cb=20130210163457" style="width: 50px; height: 70px" >
+    </div>
+
+    <div class="container">
+
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+
+
+
+
+<!-- Button to open the modal login form -->
+        <button onclick="document.getElementById('id01').style.display='block'">Sign up </button>
+        <input type="checkbox" checked="checked"> Remember me
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+</form>
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+        class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+            <img src="http://vignette3.wikia.nocookie.net/scribblenauts/images/c/c2/Combat_Medic.png/revision/latest?cb=20130210163457" style="width: 50px; height: 70px" >
+        </div>
+
+        <div class="container">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label><b>Re Enter Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit">Save</button>
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        </div>
+    </form>
+</div>
+</body>
+
+</html>
