@@ -1,6 +1,3 @@
-
-
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -27,11 +24,6 @@
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300|Material+Icons' rel='stylesheet' type='text/css'>
-    <meta charset="UTF-8">
-    <title>calendar</title>
-
-
-
 </head>
 
 <body>
@@ -65,7 +57,7 @@
                         <p>Reports</p>
                     </a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="calendar.html">
                         <i class="material-icons">date_range </i>
                         <p>Calendar</p>
@@ -91,7 +83,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"></a>
+                    <a class="navbar-brand" href="#">Emergency Info</a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -111,7 +103,7 @@
                         <li>
                             <a href="#pablo" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="material-icons">person</i>
-                                <p class="hidden-lg hidden-md">Profile</p>
+                                <p class="hidden-lg hidden-md"></p>
                             </a>
                         </li>
                     </ul>
@@ -129,12 +121,44 @@
             </div>
         </nav>
 
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
 
-        <iframe src="https://calendar.google.com/calendar/embed?src=mounika.boddapati%40sjsu.edu&ctz=America/Los_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+                    <div class="card">
+                        <div class="card-header" data-background-color="blue">
+                            <h4 class="title">Emergency Contact Info</h4>
+                        </div>
+                        <div class="card-content">
+                            <form>
+                                <div class="row">
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label id="customername" class="control-label">Caretaker Name</label>
+                                            <input type="text" class="form-control" id="customername_input">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label id="email" class="control-label">Phone Number</label>
+                                            <input type="email" class="form-control" id="email_id">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label id="desc"class="control-label">E-Mail ID</label>
+                                            <textarea class="form-control" rows="1" id="desc_input"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
 
 
-    </div>
-</div>
+                        </div>
+                    </div>
 
 </body>
 
